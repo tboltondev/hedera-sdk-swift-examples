@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AEBB3B622CF4A4FD00941964 /* Hedera in Frameworks */ = {isa = PBXBuildFile; productRef = AEBB3B612CF4A4FD00941964 /* Hedera */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AEBB3B4E2CF4A1D100941964 /* hedera-sdk-swift-examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hedera-sdk-swift-examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBB3B622CF4A4FD00941964 /* Hedera in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "hedera-sdk-swift-examples";
 			packageProductDependencies = (
+				AEBB3B612CF4A4FD00941964 /* Hedera */,
 			);
 			productName = "hedera-sdk-swift-examples";
 			productReference = AEBB3B4E2CF4A1D100941964 /* hedera-sdk-swift-examples.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = AEBB3B452CF4A1D100941964;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AEBB3B602CF4A4FD00941964 /* XCRemoteSwiftPackageReference "hedera-sdk-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AEBB3B4F2CF4A1D100941964 /* Products */;
 			projectDirPath = "";
@@ -335,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AEBB3B602CF4A4FD00941964 /* XCRemoteSwiftPackageReference "hedera-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hashgraph/hedera-sdk-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.32.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AEBB3B612CF4A4FD00941964 /* Hedera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEBB3B602CF4A4FD00941964 /* XCRemoteSwiftPackageReference "hedera-sdk-swift" */;
+			productName = Hedera;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AEBB3B462CF4A1D100941964 /* Project object */;
 }
